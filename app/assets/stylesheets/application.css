@@ -1,0 +1,73 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ .tab {
+   overflow: hidden;
+   border: 1px solid #ccc;
+   background-color: #f1f1f1;
+ }
+ .tab button {
+   background-color: inherit;
+   float: left;
+   border: none;
+   outline: none;
+   padding: 14px 16px;
+   transition: 0.4s;
+   font-size: 17px;
+   z-index: 1;
+ }
+ .tab button:hover {
+   background-color: #aaaaaa;
+ }
+ .tab button:active {
+   background-color: #ccc;
+ }
+ .main-body-left {
+   border: 6px solid darkgrey;
+   border-radius: 20px;
+   z-index: 3;
+   height: 500px;
+   width: 500px;
+   overflow-y: scroll;
+   overflow-x: hidden;
+   margin-top: 5px;
+ }
+ .footer {
+   position: fixed;
+   left: 0;
+   right: 2px;
+   bottom: 0;
+   width: 100%;
+   background-color: red;
+   color: white;
+   text-align: center;
+   font-size: 14px;
+   z-index: 2;
+   padding: 14px;
+   width: 97.3%;
+   height: 50px;
+   border: 2px solid black;
+   font-family: 'Raleway', sans-serif;
+   background-image: url("http://www.afghanzariza.com/uploads/new/black-dark-background-1391326924.jpg");
+ }
+ .links {
+   position: relative;
+   float: left;
+   bottom: 2px;
+ }
+ .others {
+   position: relative;
+   float: right;
+ }

@@ -1,0 +1,48 @@
+h1 {
+  font-family: 'Raleway', sans-serif;
+  position: relative;
+  left: 14px;
+  font-size: 30px;
+}
+h3 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 20px;
+}
+.content-div {
+  font-family: 'Nunito', sans-serif;
+  font-size: 18px;
+}
+.new-post-button {
+  width: 200px;
+  border-radius: 10px;
+  text-decoration: none;
+  position: relative;
+  left: 0px;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  background-color: #ffb3ff;
+  font-family: fantasy;
+  border: 4px solid black;
+}
+.post-title {
+  border: 1px solid blue;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 5px;
+}
+.container {
+  border: 1px solid blue;
+  width: 480px;
+  position: relative;
+  left: 2px;
+}
+.post-container {
+  border: 5px solid lightblue;
+  padding: 10px;
+}
+.post-content, .post-comments-count {
+  padding: 10px;
+  margin: 5px;
+  font-family: 'Raleway', sans-serif;
+}
