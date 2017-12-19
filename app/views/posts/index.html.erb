@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:800" rel="stylesheet">
   <link rel="stylesheet" href="posts/index_style.css" type="text/css">
 </head>
 <body>
-  <h1>Hey, Welcome to my home page</h1>
+  <h1 class="text-left" style="font-size: 60px; font-family: 'Nunito', sans-serif;">My Blog</h1>
   <div class="new-post">
     <h4 class="new-post-button"><%= link_to "Create a new post", new_post_path %></h4>
   </div>
@@ -20,8 +20,14 @@
               <%= link_to 'view post', post %>
             </p>
           </div>
+          <div class="created_at">
+            <h6><%= post.created_at.strftime('%b %d, %Y') %></h6>
+          </div>
           <div class="post-content">
-            <h3 class="content-div">Content: </h3><%= post.content %>
+            <h3 class="content-div">Content: </h3><%= raw(post.content).truncate(358) %>
+          </div>
+          <div class="read-more">
+            <%= link_to "READ MORE", post_path(post) %>
           </div>
           <div class="post-comments-count">
             <span class="tag-rounded"><%= post.comments.count %> comments </span>

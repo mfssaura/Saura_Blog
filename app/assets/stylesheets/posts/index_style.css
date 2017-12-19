@@ -1,12 +1,12 @@
 h1 {
   font-family: 'Raleway', sans-serif;
   position: relative;
-  left: 14px;
-  font-size: 30px;
+  left: 70px;
+  font-size: 10px;
 }
 h3 {
   font-family: 'Nunito', sans-serif;
-  font-size: 20px;
+  font-size: 10px;
 }
 .content-div {
   font-family: 'Nunito', sans-serif;
@@ -17,7 +17,7 @@ h3 {
   border-radius: 10px;
   text-decoration: none;
   position: relative;
-  left: 0px;
+  left: 64px;
   padding: 10px;
   margin: 10px;
   text-align: center;
@@ -31,9 +31,13 @@ h3 {
   padding: 10px;
   margin: 5px;
 }
+.created_at, .read-more {
+  padding: 10px;
+  margin: 5px;
+}
 .container {
-  border: 1px solid blue;
-  width: 480px;
+
+  width: 1000px;
   position: relative;
   left: 2px;
 }

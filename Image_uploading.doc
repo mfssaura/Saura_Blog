@@ -1,0 +1,15 @@
+﻿Now, we want to enable image upload for our posts which allow images to be uploaded when new posts are created. We will now make use of a gem called carrierwave. 
+
+//Add the following gem in gemfile
+
+gem 'carrierwave'
+gem 'mini_magick'
+
+Carrierwave helps us to enable seamless upload of images in your Rails application.
+Mini_Magick helps in the processing of images.
+
+> bundle install
+
+Next run the generator file to ensure that some important files are generated such that CarrierWave works with Imagemagick
+
+

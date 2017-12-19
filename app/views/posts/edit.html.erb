@@ -1,17 +1,25 @@
-<% content_for :page_title, "Edit Post" %>
-<div class="form-section">
-  <%= simple_form_for @post do |f| %>
-    <div class="field">
-      <div class="control">
-        <%= f.input :title, input_html: { class: 'input' }, wrapper: false, label_html: { class: 'label'} %>
-      </div>
-    </div>
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="posts/_form_style.css" type="text/css">
+</head>
+  <body>
+    <% content_for :page_title, "Edit Post" %>
+    <div class="form-section">
+      <%= simple_form_for @post do |f| %>
+        <div class="field">
+          <div class="control">
+            <%= f.input :title, input_html: { class: 'input' }, wrapper: false, label_html: { class: 'label'} %>
+          </div>
+        </div>
 
-    <div class="field">
-      <div class="control">
-        <%= f.input :content, input_html: { class: 'textarea' }, wrapper: false, label_html: { class: 'label' } %>
-      </div>
+        <div class="field">
+          <div class="control">
+            <%= f.input :content, :as => :ckeditor, input_html: {:ckeditor => {:toolbar => 'FULL'}}, class: "input" %>
+          </div>
+        </div>
+        <%= f.button :submit, 'Update post', class: "button-is-primary" %>
+      <% end %>
     </div>
-    <%= f.button :submit, 'Update post', class: "button-is-primary" %>
-  <% end %>
-</div>
+  </body>
+</html>

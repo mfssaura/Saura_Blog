@@ -23,6 +23,10 @@ gem 'jbuilder', '~> 2.0'
 #simple form
 gem 'simple_form'
 gem 'devise'
+gem 'ckeditor'
+gem 'carrierwave'
+gem 'mini_magick'
+gem 'bootstrap-sass', '~> 3.3'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
