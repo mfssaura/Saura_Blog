@@ -18,12 +18,12 @@ h3 {
   text-decoration: none;
   position: relative;
   left: 64px;
-  padding: 10px;
+  padding: 2px;
   margin: 10px;
   text-align: center;
   background-color: #ffb3ff;
   font-family: fantasy;
-  border: 4px solid black;
+  border: 4px solid #f6a2b3;
 }
 .post-title {
   border: 1px solid blue;
